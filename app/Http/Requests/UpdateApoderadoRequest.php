@@ -5,7 +5,7 @@ namespace App\Http\Requests;
 use Illuminate\Foundation\Http\FormRequest;
 use App\Models\Apoderado;
 
-class CreateApoderadoRequest extends FormRequest
+class UpdateApoderadoRequest extends FormRequest
 {
 
     /**

@@ -3,9 +3,9 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use App\Models\Apoderado;
+use App\Models\Postulacion;
 
-class CreateApoderadoRequest extends FormRequest
+class CreatePostulacionRequest extends FormRequest
 {
 
     /**
@@ -25,6 +25,6 @@ class CreateApoderadoRequest extends FormRequest
      */
     public function rules()
     {
-        return Apoderado::$rules;
+        return Postulacion::$rules;
     }
 }

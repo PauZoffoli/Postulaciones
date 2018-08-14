@@ -3,9 +3,9 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use App\Models\Apoderado;
+use App\Models\Region;
 
-class CreateApoderadoRequest extends FormRequest
+class UpdateRegionRequest extends FormRequest
 {
 
     /**
@@ -25,6 +25,6 @@ class CreateApoderadoRequest extends FormRequest
      */
     public function rules()
     {
-        return Apoderado::$rules;
+        return Region::$rules;
     }
 }

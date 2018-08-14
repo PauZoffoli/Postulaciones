@@ -39,3 +39,24 @@ Route::get('/logout', function () {
 });
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+
+Route::resource('apoderados', 'ApoderadoController');
+
+Route::resource('candidatos', 'CandidatoController');
+
+Route::resource('comunas', 'ComunaController');
+
+Route::resource('postulacions', 'PostulacionController');
+
+Route::resource('provincias', 'ProvinciaController');
+
+Route::resource('regions', 'RegionController');
